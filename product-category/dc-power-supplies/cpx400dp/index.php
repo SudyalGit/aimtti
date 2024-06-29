@@ -2,6 +2,11 @@
 
 $heading = "CPX Series";
 
+$title = "CPX400DP Bench Power Supply /System/ATE Programmable DC Power Supply | Dual Output 2 x 60V/20A 420W | USB, RS232, LAN/LXI Interfaces | Aim-TTi-Instruments";
+$description = "Discover the CPX400DP Bench/System/ATE Programmable DC Power Supply from Aim-TTi. Featuring dual outputs of 2 x 60V/20A 420W, with USB, RS232, and LAN/LXI interfaces. GPIB optional. Ideal for versatile applications. Learn more at Aim-TTi India.";
+$url = "https://aimtti.co.in/product-category/dc-power-supplies/cpx400dp";
+$imageurl = "https://aimtti.co.in/sites/default/files/CPX400DP-1000px.jpg";
+
 $sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 1";
 $result = mysqli_query($conn, $sql);
 
@@ -73,9 +78,24 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
     <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Explore Aim-TTi CPX Series Bench/System/ATE Programmable DC Power Supply with single or dual outputs, 360 to 840 watts, available in India with or without remote interfaces." />
-    <link rel="canonical" href="https://aimtti.co.in/product-category/dc-power-supplies/aim-cpxseries" />
-    <title>CPX Series Bench/System/ATE Programmable DC Power Supply | Aim-TTi India</title>
+
+
+    <title><?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description ?>" />
+    <meta name="keywords" content="cpx200d, cpx200d power supply, cpx200d power supply in india" />
+
+    <meta property="og:title" content="<?php echo $title ?>" />
+    <meta property="og:description" content="<?php echo $description ?>" />
+    <meta property="og:url" content="<?php echo $url ?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="<?php echo $imageurl ?>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?php echo $title ?>" />
+    <meta name="twitter:description" content="<?php echo $description ?>" />
+    <meta name="twitter:image" content="<?php echo $imageurl ?>" />
+
+    <link rel="canonical" href="<?php echo $url ?>" />
 
     <link rel="stylesheet" href="../../../assets/css/index.css">
 </head>
@@ -188,7 +208,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 <tr>
     <td class="model-image">
         <img class="model-for-image cursor" data-img="' . $domain . 'sites/default/files/' . $model['ImageURL'] . '" src="' . $domain . 'sites/default/files/styles/medium/public/' . $model['ImageURL'] . '"
-            alt="Aim-TTi India ' . $model['ModelName'] . ' DC Power Supply ">
+            alt="Aim-TTi-Instruments ' . $model['ModelName'] . ' DC Power Supply ">
     </td>
     <td class="model-details">
         <h4>' . $model["ModelName"] . '</h4>

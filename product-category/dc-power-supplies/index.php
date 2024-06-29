@@ -2,6 +2,11 @@
 
 $heading = "DC Power Supplies";
 
+$title = "DC Power Supplies | Aim-TTi-Instruments";
+$description = "Bench and Laboratory Programmable DC Power Supplies, single or multiple channels, available in India";
+$url = "https://aimtti.co.in/product-category/dc-power-supplies";
+$imageurl = "https://aimtti.co.in/sites/default/files/category-image/DC_power_supplies_product_group_6c_1.jpg";
+
 $sql = "SELECT * FROM `products` WHERE `CategoryId` = 1";
 $result = mysqli_query($conn, $sql);
 
@@ -27,10 +32,25 @@ if (mysqli_num_rows($result) > 0) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="Bench and Laboratory Programmable DC Power Supplies, single or multiple channels, available in India" />
-    <link rel="canonical" href="https://aimtti.co.in/product-category/dc-power-supplies" />
-    <title>DC Power Supplies | Aim-TTi India</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+    <title><?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description ?>" />
+    <meta name="keywords" content="cpx200d, cpx200d power supply, cpx200d power supply in india" />
+
+    <meta property="og:title" content="<?php echo $title ?>" />
+    <meta property="og:description" content="<?php echo $description ?>" />
+    <meta property="og:url" content="<?php echo $url ?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="<?php echo $imageurl ?>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?php echo $title ?>" />
+    <meta name="twitter:description" content="<?php echo $description ?>" />
+    <meta name="twitter:image" content="<?php echo $imageurl ?>" />
+
+    <link rel="canonical" href="<?php echo $url ?>" />
 
     <link rel="stylesheet" href="<?php echo $domain; ?>assets/css/index.css">
 </head>
@@ -75,7 +95,7 @@ if (mysqli_num_rows($result) > 0) {
     <td class="image">
         <a href="' . $domain . 'product-category' . $product['ProductURL'] . '">
             <img src="' . $domain . 'sites/default/files/styles/prod_cats/public/image/large/' . $product['ImageURL'] . '"
-                alt="Aim-TTi India ' . $product['ProductName'] . ' DC Power Supply ">
+                alt="Aim-TTi-Instruments ' . $product['ProductName'] . ' DC Power Supply ">
         </a>
     </td>
     <td class="details">

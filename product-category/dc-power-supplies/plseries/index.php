@@ -1,9 +1,12 @@
 <?php require_once('../../../config/index.php');
 
-$title = "PLH Series Bench/System Higher Voltage DC Power Supply | Aim-TTi India India";
-$heading = "PLH Series";
+$heading = "PL Series";
+$title = "PL Series Bench/System Linear Regulated DC Power Supply | Aim-TTi-Instruments";
+$description = "Aim-TTi PL Series Bench/System Linear Regulated DC Power Supply with Smart Analog Controls, Single, Dual or Triple Outputs, 48 to 242 watts, with/without Remote Interfaces";
+$url = "https://aimtti.co.in/product-category/dc-power-supplies/plseries";
+$imageurl = "https://aimtti.co.in/sites/default/files/image/large/AIM-PL303-1k.jpg";
 
-$sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 7";
+$sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 6";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -15,6 +18,8 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     // echo "No results found";
 }
+
+
 
 
 $sql = "SELECT * FROM `productmodels` WHERE `ImageURL` = 'options' AND `ModelName` = 'GPIB 1A'";
@@ -51,14 +56,19 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
+
+
+
+
+
 $priceshow = 'PriceGBP';
-if($_COOKIE['selectedCurrency'] === 'USD'){
+if ($_COOKIE['selectedCurrency'] === 'USD') {
     $priceshow = 'PriceUSD';
 }
-if($_COOKIE['selectedCurrency'] === 'GBP'){
+if ($_COOKIE['selectedCurrency'] === 'GBP') {
     $priceshow = 'PriceGBP';
 }
-if($_COOKIE['selectedCurrency'] === 'EUR'){
+if ($_COOKIE['selectedCurrency'] === 'EUR') {
     $priceshow = 'Price';
 }
 
@@ -75,10 +85,25 @@ if($_COOKIE['selectedCurrency'] === 'EUR'){
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="Aim-TTi PLH Series Bench/System Higher Voltage DC Power Supply with linear regulation. Single output 90 watts, 120V or 250V, with/without Remote Interfaces" />
-    <link rel="canonical" href="https://aimtti.co.in/product-category/dc-power-supplies/aim-plhseries" />
-    <title>PLH Series Bench/System Higher Voltage DC Power Supply | Aim-TTi India</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+    <title><?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description ?>" />
+    <meta name="keywords" content="cpx200d, cpx200d power supply, cpx200d power supply in india" />
+
+    <meta property="og:title" content="<?php echo $title ?>" />
+    <meta property="og:description" content="<?php echo $description ?>" />
+    <meta property="og:url" content="<?php echo $url ?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="<?php echo $imageurl ?>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?php echo $title ?>" />
+    <meta name="twitter:description" content="<?php echo $description ?>" />
+    <meta name="twitter:image" content="<?php echo $imageurl ?>" />
+
+    <link rel="canonical" href="<?php echo $url ?>" />
 
     <link rel="stylesheet" href="../../../assets/css/index.css">
 </head>
@@ -92,20 +117,31 @@ if($_COOKIE['selectedCurrency'] === 'EUR'){
         <div class="content">
             <h1><?php echo $heading ?></h1>
             <h2>
-                Bench/System Higher Voltage DC Power Supply with linear regulation. Single output 90 watts, 120V or 250V, with/without Remote Interfaces
+                Bench/System Linear Regulated DC Power Supply with Smart Analog Controls, Single, Dual or Triple Outputs, 48 to 242 watts, with/without Remote Interfaces
             </h2>
 
             <div class="product-card">
                 <div class="product-card-carousel">
                     <div class="container">
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PLH250-P-1k.jpg?itok=0pjQyR7r" alt="">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-PL303-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL303-1k.jpg" alt="Aim-TTi PL303 (PL Series) DC power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_1.png?itok=WuQmw-gB" alt="">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-PL303QMD-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL303QMD-1k.jpg" alt="Aim-TTi PL303QMD (PL Series) dual channel DC power supply">
                         </div>
 
+                        <div class="mySlides">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-PL303QMT-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL303QMT-1k.jpg" alt="Aim-TTi PL303QMT (PL Series) triple channel DC power supply">
+                        </div>
+
+                        <div class="mySlides">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-PL-P-rear-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL-P-rear-1k.jpg" alt="Aim-TTi PL-P series rear panel - single channel DC power supply">
+                        </div>
+
+                        <div class="mySlides">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-Test_Bridge-1000px_2.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_2.png" alt="Test Bridge Software for Aim-TTi power products">
+                        </div>
 
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
@@ -113,17 +149,27 @@ if($_COOKIE['selectedCurrency'] === 'EUR'){
 
                         <div class="row">
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PLH250-P-1k.jpg?itok=0pjQyR7r" style="width:100%" onclick="currentSlide(1)" alt="">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL303-1k.jpg?itok=Cc6VSR0J" style="width:100%" onclick="currentSlide(1)" alt="Aim-TTi PL303 (PL Series) DC power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_1.png?itok=WuQmw-gB" style="width:100%" onclick="currentSlide(2)" alt="">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL303QMD-1k.jpg?itok=0t3aSPuF" style="width:100%" onclick="currentSlide(2)" alt="Aim-TTi PL303QMD (PL Series) dual channel DC power supply">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL303QMT-1k.jpg?itok=9Ag5XEdB" style="width:100%" onclick="currentSlide(3)" alt="Aim-TTi PL303QMT (PL Series) triple channel DC power supply">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PL-P-rear-1k.jpg?itok=BRUy8YCm" style="width:100%" onclick="currentSlide(4)" alt="Aim-TTi PL-P series rear panel - single channel DC power supply">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_2.png?itok=pAL0sg5L" style="width:100%" onclick="currentSlide(5)" alt="Test Bridge Software for Aim-TTi power products">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="product-card-details">
                     <ul>
-                        <li>Single output 120V 90W or 250V 94W</li>
+                        <li>Single, dual or triple output models</li>
+                        <li>Models from 6V/8A up to 60V/1.5A</li>
                         <li>Linear regulation - for the best performance</li>
                         <li>Ultra-compact design - uses up less space</li>
                         <li>True Analogue controls - for ease of use</li>
@@ -132,23 +178,11 @@ if($_COOKIE['selectedCurrency'] === 'EUR'){
                         <li>Low current range and current meter averaging</li>
                         <li>DC output switches and "view limits" button</li>
                         <li>Selectable remote sense terminals</li>
+                        <li>Independent, Isolated Tracking, Ratio Tracking&nbsp; and True Parallel modes on dual &amp; triple models</li>
+                        <li>High current low voltage output on triple output model</li>
                     </ul>
-
-                    <p>P versions add:</p>
-
-                    <ul>
-                        <li>Full digital remote control and readback</li>
-                        <li>RS-232, USB and LAN (Ethernet)</li>
-                        <li>LAN Interface conforms with LXI standard</li>
-                        <li>IVI Driver supplied</li>
-                        <li>Interfaces are opto-isolated from outputs</li>
-                        <li>Isolated Analogue remote control of V and I</li>
-                        <li>Front and rear terminals</li>
-                    </ul>
-
-                    <p>P(G) Version is as P above plus GPIB interface</p>
                     <br>
-                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-PLH+PLH-P_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1420-4.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-PL+PL-P_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1350-6.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
                 </div>
             </div>
 
@@ -186,7 +220,7 @@ if($_COOKIE['selectedCurrency'] === 'EUR'){
 <tr>
     <td class="model-image">
         <img class="model-for-image cursor" data-img="' . $domain . 'sites/default/files/' . $model['ImageURL'] . '" src="' . $domain . 'sites/default/files/styles/medium/public/' . $model['ImageURL'] . '"
-            alt="">
+            alt="Aim-TTi-Instruments ' . $model['ModelName'] . ' DC Power Supply">
     </td>
     <td class="model-details">
         <h4>' . $model["ModelName"] . '</h4>
@@ -230,7 +264,6 @@ if($_COOKIE['selectedCurrency'] === 'EUR'){
                     </tbody>
                 </table>
 
-
                 <table id="model-title-options" class="options-table hide">
                 </table>
 
@@ -251,10 +284,10 @@ if($_COOKIE['selectedCurrency'] === 'EUR'){
 
 
 
-<?php
+                        <?php
 
-foreach ($accessories as $accessorie) {
-    echo '
+                        foreach ($accessories as $accessorie) {
+                            echo '
 
 <tr>
 <td class="model-details">
@@ -281,8 +314,8 @@ foreach ($accessories as $accessorie) {
 </tr>
 
 ';
-}
-?>
+                        }
+                        ?>
 
 
 
@@ -304,9 +337,8 @@ foreach ($accessories as $accessorie) {
 
 
 
-</tbody>
+                    </tbody>
                 </table>
-
 
                 <div id="model-title-data" class="data-table hide">
                     <table class="views-table cols-0">
@@ -316,7 +348,7 @@ foreach ($accessories as $accessorie) {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/plh-series-dc-power-supplies-product-tour">PLH Series DC Power Supplies Product Tour - (HTML / English)</a>
+                                    <a href="/resources/pl-series-dc-power-supplies-product-tour">PL Series DC Power Supplies Product Tour - (HTML / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -331,6 +363,11 @@ foreach ($accessories as $accessorie) {
                                     <a href="/resources/pl-and-plh-series-firmware-single-and-dual-output-models-v408">PL and PLH series firmware, single and dual output models (V4.08) - (HEX / English)</a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/pl303qmt-p-firmware-file-v207">PL303QMT-P Firmware File (V2.07) - (HEX / English)</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <table class="views-table cols-0">
@@ -338,6 +375,16 @@ foreach ($accessories as $accessorie) {
                             <h3>Drivers</h3>
                         </caption>
                         <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/resources/new-pl-p-series-power-supplies-ivi-driver-v160">New PL-P series Power Supplies, IVI Driver V1.6.0 - (ZIP / English)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/pl-p-series-power-supplies-combined-labview-driver-and-labwindows-cvi-driver-v160">PL-P series Power Supplies combined LabVIEW Driver and LabWindows CVI Driver V1.6.0 - (ZIP / English)</a>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>
                                     <a href="/resources/usb-driver-v211">USB Driver V2.11 - (ZIP / English)</a>
@@ -353,6 +400,11 @@ foreach ($accessories as $accessorie) {
                             <tr>
                                 <td>
                                     <a href="/resources/pl-p-and-plh-p-series-single-output-power-supplies-mechanical-drawing">PL-P and PLH-P Series Single Output Power Supplies Mechanical Drawing - (PDF / English)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/pl303qmd-and-pl303qmd-p-power-supplies-mechanical-drawing">PL303QMD and PL303QMD-P Power Supplies Mechanical Drawing - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -376,7 +428,7 @@ foreach ($accessories as $accessorie) {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/plh-series-dc-power-supplies-data-sheet-en-issue-4">PLH Series DC Power Supplies Data Sheet EN Issue 4 - (PDF / English)</a>
+                                    <a href="/resources/pl-series-dc-power-supplies-data-sheet-en-issue-6">PL Series DC Power Supplies Data Sheet EN Issue 6 - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -388,32 +440,27 @@ foreach ($accessories as $accessorie) {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/plh-plh-p-instruction-manual-issue-11">PLH &amp; PLH-P Instruction Manual - Issue 11 - (PDF / English)</a>
+                                    <a href="/resources/new-pl-pl-p-series-bedienungsanleitung-auf-deutsch-issue-18">New PL &amp; PL-P Series Bedienungsanleitung auf Deutsch - Issue 18 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/plh-plh-p-series-bedienungsanleitung-auf-deutsch-issue-11">PLH &amp; PLH-P Series Bedienungsanleitung auf Deutsch - Issue 11 - (PDF / German)</a>
+                                    <a href="/resources/new-pl-pl-p-series-instrucciones-en-espanol-issue-18">New PL &amp; PL-P Series Instrucciones en Espanol - Issue 18 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/plh-plh-p-series-instrucciones-en-espanol-issue-10">PLH &amp; PLH-P Series Instrucciones en Espanol - Issue 10 - (PDF / Spanish)</a>
+                                    <a href="/resources/new-pl-pl-p-series-instruction-manual-issue-18">New PL &amp; PL-P Series Instruction Manual - Issue 18 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/plh-plh-p-series-instrucciones-en-espanol-issue-11">PLH &amp; PLH-P Series Instrucciones en Espanol - Issue 11 - (PDF / Spanish)</a>
+                                    <a href="/resources/new-pl-pl-p-series-instructions-en-francais-issue-18">New PL &amp; PL-P Series Instructions en Francais - Issue 18 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/plh-plh-p-series-instructions-en-francais-issue-11">PLH &amp; PLH-P Series Instructions en Francais - Issue 11 - (PDF / French)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/plh-plh-p-series-istruzioni-italiano-issue-11">PLH &amp; PLH-P Series Istruzioni in Italiano - Issue 11 - (PDF / Italian)</a>
+                                    <a href="/resources/new-pl-pl-p-series-istruzioni-italiano-issue-18">New PL &amp; PL-P Series Istruzioni in Italiano - Issue 18 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -444,6 +491,8 @@ foreach ($accessories as $accessorie) {
 
 
             </div>
+
+
         </div>
     </div>
 

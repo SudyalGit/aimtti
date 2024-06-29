@@ -15,8 +15,8 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="">Website Feedback</a></span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="">Job at Aim-TTi India</a></span>
         <br>
-        <a href=""><img src="' . $domain . 'sites/default/files/u6738/In-2C-29px-R.png" alt=""></a>
-        <a href=""><img src="' . $domain . 'sites/default/files/u6738/FB-f-Logo__blue_29.png" alt=""></a>
+        <a href=""><img src="' . $domain . 'sites/default/files/u6738/In-2C-29px-R.png" alt="facebook logo"></a>
+        <a href=""><img src="' . $domain . 'sites/default/files/u6738/FB-f-Logo__blue_29.png" alt="linked-in logo"></a>
 
     </div>
 </footer>

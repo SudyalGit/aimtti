@@ -1,7 +1,10 @@
 <?php require_once('../../../config/index.php');
 
-$title = "EX-R Series Bench DC Power Supply - mixed-mode regulation | Aim-TTi India";
 $heading = "EX-R Series";
+$title = "EX-R Series Bench DC Power Supply - mixed-mode regulation | Aim-TTi-Instruments";
+$description = "Aim-TTi EX-R Series Bench DC Power Supply - mixed-mode regulation with analogue controls. Single, dual or triple outputs, 175 to 420 watts";
+$url = "https://aimtti.co.in/product-category/dc-power-supplies/ex-rseries";
+$imageurl = "https://aimtti.co.in/sites/default/files/image/large/AIM-EX2020R-1k.jpg";
 
 $sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 8";
 $result = mysqli_query($conn, $sql);
@@ -40,10 +43,25 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="Aim-TTi EX-R Series Bench DC Power Supply - mixed-mode regulation with analogue controls. Single, dual or triple outputs, 175 to 420 watts" />
-    <link rel="canonical" href="https://aimtti.co.in/product-category/dc-power-supplies/aim-ex-rseries" />
-    <title>EX-R Series Bench DC Power Supply - mixed-mode regulation | Aim-TTi India</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+    <title><?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description ?>" />
+    <meta name="keywords" content="cpx200d, cpx200d power supply, cpx200d power supply in india" />
+
+    <meta property="og:title" content="<?php echo $title ?>" />
+    <meta property="og:description" content="<?php echo $description ?>" />
+    <meta property="og:url" content="<?php echo $url ?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="<?php echo $imageurl ?>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?php echo $title ?>" />
+    <meta name="twitter:description" content="<?php echo $description ?>" />
+    <meta name="twitter:image" content="<?php echo $imageurl ?>" />
+
+    <link rel="canonical" href="<?php echo $url ?>" />
 
     <link rel="stylesheet" href="../../../assets/css/index.css">
 </head>
@@ -64,15 +82,15 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                 <div class="product-card-carousel">
                     <div class="container">
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX2020R-1k.jpg?itok=dsGe_Bzf" alt="">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-EX2020R-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX2020R-1k.jpg" alt="Aim-TTi EX2020R (EX-R series) DC power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX354RD-1k.jpg?itok=3vIWcFTX" alt="">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-EX354RD-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX354RD-1k.jpg" alt="Aim-TTi EX354RD (EX-R series) DC power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX345RT-1k.jpg?itok=i4peOkbs" alt="">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-EX345RT-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX345RT-1k.jpg" alt="Aim-TTi EX345RT (EX-R series) DC power supply">
                         </div>
 
 
@@ -82,13 +100,13 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 
                         <div class="row">
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX2020R-1k.jpg?itok=dsGe_Bzf" style="width:100%" onclick="currentSlide(1)" alt="">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX2020R-1k.jpg" style="width:100%" onclick="currentSlide(1)" alt="Aim-TTi EX2020R (EX-R series) DC power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX354RD-1k.jpg?itok=3vIWcFTX" style="width:100%" onclick="currentSlide(2)" alt="">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX354RD-1k.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aim-TTi EX354RD (EX-R series) DC power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX2020R-1k.jpg?itok=dsGe_Bzf" style="width:100%" onclick="currentSlide(3)" alt="">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-EX345RT-1k.jpg" style="width:100%" onclick="currentSlide(3)" alt="Aim-TTi EX345RT (EX-R series) DC power supply">
                             </div>
                         </div>
                     </div>
@@ -146,7 +164,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 <tr>
     <td class="model-image">
         <img class="model-for-image cursor" data-img="' . $domain . 'sites/default/files/' . $model['ImageURL'] . '" src="' . $domain . 'sites/default/files/styles/medium/public/' . $model['ImageURL'] . '"
-            alt="">
+            alt="Aim-TTi-Instruments ' . $model['ModelName'] . ' DC Power Supply">
     </td>
     <td class="model-details">
         <h4>' . $model["ModelName"] . '</h4>

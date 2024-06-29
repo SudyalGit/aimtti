@@ -1,8 +1,12 @@
 <?php require_once('../../../config/index.php');
 
-$heading = "QL Series II";
+$heading = "PLH Series";
+$title = "PLH Series Bench/System Higher Voltage DC Power Supply | Aim-TTi-Instruments";
+$description = "Aim-TTi PLH Series Bench/System Higher Voltage DC Power Supply with linear regulation. Single output 90 watts, 120V or 250V, with/without Remote Interfaces.";
+$url = "https://aimtti.co.in/product-category/dc-power-supplies/plhseries";
+$imageurl = "https://aimtti.co.in/sites/default/files/image/large/AIM-PLH250-P-1k.jpg";
 
-$sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 5";
+$sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 7";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -14,8 +18,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     // echo "No results found";
 }
-
-
 
 
 $sql = "SELECT * FROM `productmodels` WHERE `ImageURL` = 'options' AND `ModelName` = 'GPIB 1A'";
@@ -34,7 +36,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-$sql = "SELECT * FROM `productmodels` WHERE `ImageURL` = 'access' AND ModelName = 'RM410'";
+$sql = "SELECT * FROM `productmodels` WHERE `ImageURL` = 'access' AND ModelName = 'RM460'";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -46,6 +48,8 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "No results found";
 }
+
+
 
 
 
@@ -75,9 +79,24 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
     <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Explore Aim-TTi QL Series II Bench/System Precision Linear Regulated DC Power Supply with digital control, offering single or triple outputs and 105 to 242 watts power capacity. Available in India with or without remote interfaces." />
-    <link rel="canonical" href="https://aimtti.co.in/product-category/dc-power-supplies/aim-qlseries" />
-    <title>QL Series II Bench/System Precision Linear Regulated DC Power Supply | Aim-TTi India</title>
+
+
+    <title><?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description ?>" />
+    <meta name="keywords" content="cpx200d, cpx200d power supply, cpx200d power supply in india" />
+
+    <meta property="og:title" content="<?php echo $title ?>" />
+    <meta property="og:description" content="<?php echo $description ?>" />
+    <meta property="og:url" content="<?php echo $url ?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="<?php echo $imageurl ?>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?php echo $title ?>" />
+    <meta name="twitter:description" content="<?php echo $description ?>" />
+    <meta name="twitter:image" content="<?php echo $imageurl ?>" />
+
+    <link rel="canonical" href="<?php echo $url ?>" />
 
     <link rel="stylesheet" href="../../../assets/css/index.css">
 </head>
@@ -91,22 +110,18 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
         <div class="content">
             <h1><?php echo $heading ?></h1>
             <h2>
-                Bench/System Precision Linear Regulated DC Power Supply with digital control, single or triple Outputs, 105 to 242 watts, with/without Remote Interfaces
+                Bench/System Higher Voltage DC Power Supply with linear regulation. Single output 90 watts, 120V or 250V, with/without Remote Interfaces
             </h2>
 
             <div class="product-card">
                 <div class="product-card-carousel">
                     <div class="container">
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QL564P-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QL564P-1k.jpg?itok=bs5gMfLN" alt="Aim-TTi QL564P (QL series) DC power supply">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-PLH250-P-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PLH250-P-1k.jpg" alt="Aim-TTi PLH250P (PLH series) DC power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QL355TP-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QL355TP-1k.jpg?itok=RnJjyiVl" alt="Aim-TTi QL355TP (QL series) DC power supply">
-                        </div>
-
-                        <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-Test_Bridge-1000px_3.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_3.png?itok=ki4TJQBt" alt="Test Bridge Software for Aim-TTi power products">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-Test_Bridge-1000px_1.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_1.png" alt="Test Bridge Software for Aim-TTi power products">
                         </div>
 
 
@@ -116,35 +131,42 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 
                         <div class="row">
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QL564P-1k.jpg?itok=bs5gMfLN" style="width:100%" onclick="currentSlide(1)" alt="Aim-TTi QL564P (QL series) DC power supply">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-PLH250-P-1k.jpg?itok=0pjQyR7r" style="width:100%" onclick="currentSlide(1)" alt="Aim-TTi PLH250P (PLH series) DC power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QL355TP-1k.jpg?itok=RnJjyiVl" style="width:100%" onclick="currentSlide(2)" alt="Aim-TTi QL355TP (QL series) DC power supply">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_3.png?itok=ki4TJQBt" style="width:100%" onclick="currentSlide(3)" alt="Test Bridge Software for Aim-TTi power products">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_1.png?itok=WuQmw-gB" style="width:100%" onclick="currentSlide(2)" alt="Test Bridge Software for Aim-TTi power products">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="product-card-details">
                     <ul>
-                        <li>Advanced dc power supplies, single or triple output</li>
-                        <li>Up to 112 watts per output</li>
-                        <li>Very high precision, very low noise, excellent dynamics</li>
-                        <li>Advanced user interface with numeric and rotary control</li>
-                        <li>Multiple voltage/current ranges for increased flexibility</li>
-                        <li>Multiple non-volatile memories for power supply set-ups</li>
-                        <li>Switchable remote sense provides perfect load regulation</li>
-                        <li>Comprehensive protection including OVP and OCP trips</li>
-                        <li>Compact bench footprint; modular width for rack mounting</li>
-                        <li>Auxiliary output fully variable 1.00V to 6.00V at 3A with selectable voltage and current metering (T models)</li>
-                        <li>Bus programmable via USB, RS232, GPIB or LAN (P models)</li>
-                        <li>LAN interface is LXI compliant</li>
-                        <li>Duplicate power and sense terminals at rear (P models)</li>
+                        <li>Single output 120V 90W or 250V 94W</li>
+                        <li>Linear regulation - for the best performance</li>
+                        <li>Ultra-compact design - uses up less space</li>
+                        <li>True Analogue controls - for ease of use</li>
+                        <li>S-Lock function - instantly lock settings</li>
+                        <li>V-Span function - customize the voltage range</li>
+                        <li>Low current range and current meter averaging</li>
+                        <li>DC output switches and "view limits" button</li>
+                        <li>Selectable remote sense terminals</li>
                     </ul>
+
+                    <p>P versions add:</p>
+
+                    <ul>
+                        <li>Full digital remote control and readback</li>
+                        <li>RS-232, USB and LAN (Ethernet)</li>
+                        <li>LAN Interface conforms with LXI standard</li>
+                        <li>IVI Driver supplied</li>
+                        <li>Interfaces are opto-isolated from outputs</li>
+                        <li>Isolated Analogue remote control of V and I</li>
+                        <li>Front and rear terminals</li>
+                    </ul>
+
+                    <p>P(G) Version is as P above plus GPIB interface</p>
                     <br>
-                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-QL_Series_II_DC_Power_Supplies_Data_Sheet_EN_82100-1190-4.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-PLH+PLH-P_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1420-4.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
                 </div>
             </div>
 
@@ -152,7 +174,6 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
             <!-- model series -->
 
             <div class="model-series">
-
                 <div class="model-series-title">
                     <div onclick="changeModelTitle(event)" data-id="model-title-product" class="cursor model-series-title-name">Product</div>
                     <div onclick="changeModelTitle(event)" data-id="model-title-options" class="cursor model-series-title-name">Options</div>
@@ -161,7 +182,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                 </div>
 
 
-                <table id="model-title-product" class="data-table">
+                <table id="model-title-product" class="product-series-table">
                     <thead>
                         <tr>
                             <th></th>
@@ -183,7 +204,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 <tr>
     <td class="model-image">
         <img class="model-for-image cursor" data-img="' . $domain . 'sites/default/files/' . $model['ImageURL'] . '" src="' . $domain . 'sites/default/files/styles/medium/public/' . $model['ImageURL'] . '"
-            alt="Aim-TTi India ' . $model['ModelName'] . ' DC Power Supply ">
+            alt="Aim-TTi-Instruments ' . $model['ModelName'] . ' DC Power Supply">
     </td>
     <td class="model-details">
         <h4>' . $model["ModelName"] . '</h4>
@@ -227,10 +248,19 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                     </tbody>
                 </table>
 
+
                 <table id="model-title-options" class="options-table hide">
                 </table>
 
                 <table id="model-title-accessories" class="data-table hide">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
                     <tbody>
 
 
@@ -304,7 +334,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-dc-power-supplies-product-tour">QL Series DC Power Supplies Product Tour - (HTML / English)</a>
+                                    <a href="/resources/plh-series-dc-power-supplies-product-tour">PLH Series DC Power Supplies Product Tour - (HTML / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -316,7 +346,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-ii-interface-firmware-v208">QL Series II Interface firmware V2.08 - (HEX / English)</a>
+                                    <a href="/resources/pl-and-plh-series-firmware-single-and-dual-output-models-v408">PL and PLH series firmware, single and dual output models (V4.08) - (HEX / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -326,16 +356,6 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                             <h3>Drivers</h3>
                         </caption>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <a href="/resources/ql-p-series-power-supplies-ivi-driver-v180">QL-P series Power Supplies IVI driver V1.8.0 - (ZIP / English)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/ql-p-series-power-supplies-labview-and-cvi-driver-v180-0">QL-P series Power Supplies LabVIEW and CVI driver V1.8.0 - (ZIP / English)</a>
-                                </td>
-                            </tr>
                             <tr>
                                 <td>
                                     <a href="/resources/usb-driver-v211">USB Driver V2.11 - (ZIP / English)</a>
@@ -350,12 +370,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-single-output-power-supplies-mechanical-drawing">QL Series Single Output Power Supplies Mechanical Drawing - (PDF / English)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/ql-series-triple-output-power-supplies-mechanical-drawing">QL Series Triple Output Power Supplies Mechanical Drawing - (PDF / English)</a>
+                                    <a href="/resources/pl-p-and-plh-p-series-single-output-power-supplies-mechanical-drawing">PL-P and PLH-P Series Single Output Power Supplies Mechanical Drawing - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -379,7 +394,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-ii-dc-power-supplies-data-sheet-en-issue-4">QL Series II DC Power Supplies Data Sheet EN Issue 4 - (PDF / English)</a>
+                                    <a href="/resources/plh-series-dc-power-supplies-data-sheet-en-issue-4">PLH Series DC Power Supplies Data Sheet EN Issue 4 - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -391,27 +406,32 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-ii-bedienungsanleitung-auf-deutsch-issue-8">QL Series II Bedienungsanleitung auf Deutsch - Issue 8 - (PDF / German)</a>
+                                    <a href="/resources/plh-plh-p-instruction-manual-issue-11">PLH &amp; PLH-P Instruction Manual - Issue 11 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-ii-instrucciones-en-espanol-issue-8">QL Series II Instrucciones en Espanol - Issue 8 - (PDF / Spanish)</a>
+                                    <a href="/resources/plh-plh-p-series-bedienungsanleitung-auf-deutsch-issue-11">PLH &amp; PLH-P Series Bedienungsanleitung auf Deutsch - Issue 11 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-ii-instruction-manual-issue-8">QL Series II Instruction Manual - Issue 8 - (PDF / English)</a>
+                                    <a href="/resources/plh-plh-p-series-instrucciones-en-espanol-issue-10">PLH &amp; PLH-P Series Instrucciones en Espanol - Issue 10 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-ii-instructions-en-francais-issue-8">QL Series II Instructions en Francais - Issue 8 - (PDF / French)</a>
+                                    <a href="/resources/plh-plh-p-series-instrucciones-en-espanol-issue-11">PLH &amp; PLH-P Series Instrucciones en Espanol - Issue 11 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/ql-series-ii-istruzioni-italiano-issue-8">QL Series II Istruzioni in Italiano - Issue 8 - (PDF / Italian)</a>
+                                    <a href="/resources/plh-plh-p-series-instructions-en-francais-issue-11">PLH &amp; PLH-P Series Instructions en Francais - Issue 11 - (PDF / French)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/plh-plh-p-series-istruzioni-italiano-issue-11">PLH &amp; PLH-P Series Istruzioni in Italiano - Issue 11 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                         </tbody>

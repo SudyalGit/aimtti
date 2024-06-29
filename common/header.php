@@ -4,7 +4,7 @@
 <header>
     <div class="header-top">
         <div class="header-top-left">
-            <img src="' . $domain . 'assets/images/Aim-TTi-logo_220.png" alt="">
+            <img src="' . $domain . 'assets/images/Aim-TTi-logo_220.png" alt="aim-tti india logo">
             <div class="slogan">Measurably better value</div>
         </div>
 
@@ -15,7 +15,7 @@
                 <option value="USD">USD</option>
                 <option value="GBP">GBP</option>
             </select>
-            <a href=""><img class="login" src="' . $domain . 'assets/images/login.png" alt=""></a>
+            <a href=""><img class="login" src="' . $domain . 'assets/images/login.png" alt="profile-logo"></a>
             <a class="cart" href="">
                 <p>🛒&nbsp;Empty</p>
             </a>

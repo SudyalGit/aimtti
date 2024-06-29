@@ -1,9 +1,12 @@
 <?php require_once('../../../config/index.php');
 
-$title = "QPX Series Bench/System DC Power Supply | Aim-TTi India India";
-$heading = "QPX Series";
+$heading = "MX Series";
+$title = "MX Series Bench/System Multi-Range DC Power Supply | Aim-TTi-Instruments";
+$description = "Explore Aim-TTi MX Series Bench/System Multi-Range DC Power Supply with digital control, featuring 3 or 4 outputs and 315 to 420W power capacity. Available in India with or without remote interfaces.";
+$url = "https://aimtti.co.in/product-category/dc-power-supplies/mxseries";
+$imageurl = "https://aimtti.co.in/sites/default/files/image/large/AIM-MX100T-1k_0.jpg";
 
-$sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 2";
+$sql = "SELECT * FROM `productmodels` WHERE `ProductId` = 3";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -15,7 +18,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     // echo "No results found";
 }
-
 
 
 
@@ -51,11 +53,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-
-
-
-
-
 $priceshow = 'PriceGBP';
 if ($_COOKIE['selectedCurrency'] === 'USD') {
     $priceshow = 'PriceUSD';
@@ -81,9 +78,35 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
     <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Discover Aim-TTi QPX Series Bench/System DC Power Supply featuring PowerFlex or PowerFlex+ regulation, single or dual outputs up to 1200 watts. Available in India with or without digital remote interfaces." />
-    <link rel="canonical" href="https://aimtti.co.in/product-category/dc-power-supplies/aim-qpxseries" />
-    <title>QPX Series Bench/System DC Power Supply | Aim-TTi India</title>
+
+
+    <title><?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description ?>" />
+    <meta name="keywords" content="cpx200d, cpx200d power supply, cpx200d power supply in india" />
+
+    <meta property="og:title" content="<?php echo $title ?>" />
+    <meta property="og:description" content="<?php echo $description ?>" />
+    <meta property="og:url" content="<?php echo $url ?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content="<?php echo $imageurl ?>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?php echo $title ?>" />
+    <meta name="twitter:description" content="<?php echo $description ?>" />
+    <meta name="twitter:image" content="<?php echo $imageurl ?>" />
+
+    <link rel="canonical" href="<?php echo $url ?>" />
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="" />
+    <link rel="canonical" href="https://aimtti.co.in/product-category/dc-power-supplies/aim-mxseries" />
+    <title></title>
 
     <link rel="stylesheet" href="../../../assets/css/index.css">
 </head>
@@ -97,47 +120,32 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
         <div class="content">
             <h1><?php echo $heading ?></h1>
             <h2>
-                Bench/System DC Power Supply with PowerFlex or PowerFlex+ regulation, Single or Dual Outputs up to 1200 watts, with/without Digital Remote Interfaces
+                Bench/System Multi-Range DC Power Supply with digital control, 3 or 4 Outputs, 315 to 420W with/without Remote Interfaces
             </h2>
 
             <div class="product-card">
                 <div class="product-card-carousel">
                     <div class="container">
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX750_600_stack-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX750_600_stack-1k.jpg" alt="Aim-TTi QPX750SP and QPX600DP composite">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-MX100T-1k_0.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX100T-1k_0.jpg" alt="Aim-TTi MX100TP (MX Series) DC bench power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX750SP-1k_0.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX750SP-1k_0.jpg" alt="Aim-TTi QPX750SP Bench /System DC Power supply">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-MX180TP_1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX180TP_1k.jpg" alt="Aim-TTi MX180TP (MX Series) DC bench power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX750SP-bk-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX750SP-bk-1k.jpg" alt="Aim-TTi QPX750SP Bench /System DC Power supply - back panel with optional GPIB fitted">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-MX100QP-S2-fr_0.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX100QP-S2-fr_0.jpg" alt="Aim-TTi MX100QP Series 2 (MX Series) DC bench power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX1200-1k_0.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX1200-1k_0.jpg" alt="Aim-TTi QPX1200 Bench/System DC Power Supply">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-Test_Bridge-1000px_0_0.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_0_0.png" alt="Test Bridge Software for Aim-TTi power products">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX1200SP-bk-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX1200SP-bk-1k.jpg" alt="Aim-TTi QPX1200DP back panel with optional GPIB fitted">
+                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-MX-comparison-TS1QS2_0.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX-comparison-TS1QS2_0.png" alt="MX Series comparison T (triple) variants Series 1 and Q (Quad) variants Series 2">
                         </div>
 
-                        <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX600D-1k_0.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX600D-1k_0.jpg" alt="Aim-TTi QPX600L dual channel Bench/System DC Power Supply">
-                        </div>
-
-                        <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX600DP-bk-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX600DP-bk-1k.jpg" alt="Aim-TTi QPX600DP back panel with optional GPIB fitted">
-                        </div>
-
-                        <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-QPX-power-envelopes.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX-power-envelopes.png" alt="Aim-TTi QPX Series PowerFlex power envelopes">
-                        </div>
-
-                        <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-Test_Bridge-1000px_4.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_4.png" alt="Test Bridge Software for Aim-TTi power products">
-                        </div>
 
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
@@ -145,47 +153,46 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 
                         <div class="row">
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX750_600_stack-1k.jpg" style="width:100%" onclick="currentSlide(1)" alt="Aim-TTi QPX750SP and QPX600DP composite">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX100T-1k_0.jpg" style="width:100%" onclick="currentSlide(1)" alt="Aim-TTi MX100TP (MX Series) DC bench power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX750SP-1k_0.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aim-TTi QPX750SP Bench /System DC Power supply">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX180TP_1k.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aim-TTi MX180TP (MX Series) DC bench power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX750SP-bk-1k.jpg" style="width:100%" onclick="currentSlide(3)" alt="Aim-TTi QPX750SP Bench /System DC Power supply - back panel with optional GPIB fitted">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX100QP-S2-fr_0.jpg" style="width:100%" onclick="currentSlide(3)" alt="Aim-TTi MX100QP Series 2 (MX Series) DC bench power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX1200-1k_0.jpg" style="width:100%" onclick="currentSlide(4)" alt="Aim-TTi QPX1200 Bench/System DC Power Supply">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_0_0.png" style="width:100%" onclick="currentSlide(4)" alt="Test Bridge Software for Aim-TTi power products">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX1200SP-bk-1k.jpg" style="width:100%" onclick="currentSlide(5)" alt="Aim-TTi QPX1200DP back panel with optional GPIB fitted">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX600D-1k_0.jpg" style="width:100%" onclick="currentSlide(6)" alt="Aim-TTi QPX600L dual channel Bench/System DC Power Supply">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX600DP-bk-1k.jpg" style="width:100%" onclick="currentSlide(7)" alt="Aim-TTi QPX600DP back panel with optional GPIB fitted">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-QPX-power-envelopes.png" style="width:100%" onclick="currentSlide(8)" alt="Aim-TTi QPX Series PowerFlex power envelopes">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px_4.png" style="width:100%" onclick="currentSlide(9)" alt="Test Bridge Software for Aim-TTi power products">
+                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-MX-comparison-TS1QS2_0.png" style="width:100%" onclick="currentSlide(5)" alt="MX Series comparison T (triple) variants Series 1 and Q (Quad) variants Series 2">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="product-card-details">
                     <ul>
-                        <li>Wide range of voltage/current combinations</li>
-                        <li>Up to 80V and up to 50A within the same power envelope</li>
-                        <li>Low output ripple and noise of &lt;3mV rms at full power</li>
-                        <li>High setting resolution of 1mV</li>
-                        <li>Analogue control interfaces for voltage and current</li>
-                        <li>Bench or rack mounting, front and rear terminals</li>
-                        <li>USB and LAN (LXI) interfaces with GPIB optional (QPX600DP, QPX1200SP and QPX750SP)</li>
+                        <li>Three or four high performance outputs each with full functionality</li>
+                        <li>Range switching gives variable voltage/current combinations</li>
+                        <li>Shared power mode provides double power from a single output</li>
+                        <li>Low output noise and ripple via linear final regulation</li>
+                        <li>High setting resolution of up to 1mV and 0.1mA</li>
+                        <li>Variable OVP and OCP trips on all outputs which can be linked (MX-Q Series 2 units only)</li>
+                        <li>Individual or combined output on/off control with programmable delay sequencing.</li>
+                        <li>Selectable voltage tracking (isolated tracking)</li>
+                        <li>Selectable current meter averaging</li>
+                        <li>Switchable remote sense capability</li>
+                        <li>Graphic LCD (colour on Series 2) provides simultaneous output metering</li>
+                        <li>Numeric or spin-wheel control of all parameters</li>
+                        <li>50 setting memories per output plus 50 linked memories</li>
+                        <li>3U rack case for bench or rack mounting (4U rack kit accessory available)</li>
+                        <li>RS-232, USB and LAN (LXI) interfaces (P models)</li>
+                        <li>GPIB option (P models only)</li>
+                        <li>Duplicate power &amp; sense terminals at rear (P models)</li>
+                        <li>Software control from Test Bridge software (free download - P models only)</li>
                     </ul>
                     <br>
-                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-QPX_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1580-3.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-MX_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1510-11.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
                 </div>
             </div>
 
@@ -223,7 +230,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 <tr>
     <td class="model-image">
         <img class="model-for-image cursor" data-img="' . $domain . 'sites/default/files/' . $model['ImageURL'] . '" src="' . $domain . 'sites/default/files/styles/medium/public/' . $model['ImageURL'] . '"
-            alt="Aim-TTi India ' . $model['ModelName'] . ' DC Power Supply ">
+            alt="Aim-TTi-Instruments ' . $model['ModelName'] . ' DC Power Supply ">
     </td>
     <td class="model-details">
         <h4>' . $model["ModelName"] . '</h4>
@@ -310,7 +317,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 </td>
 </tr>
 
-';
+    ';
                         }
                         ?>
 
@@ -378,7 +385,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 </td>
 </tr>
 
-';
+    ';
                         }
                         ?>
 
@@ -406,26 +413,26 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                 </table>
 
                 <div id="model-title-data" class="data-table hide">
-                    <table class="views-table cols-0">
-                        <caption>
-                            <h3>Recall Notices</h3>
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="/resources/product-safety-recall-qpx750sp-mar-2024">PRODUCT SAFETY RECALL - QPX750SP MAR 2024 - (PDF / English)</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="views-table cols-0">
+                    <table class=" views-table cols-0">
                         <caption>
                             <h3>Product Tours</h3>
                         </caption>
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx-series-dc-power-supplies-product-tour">QPX Series DC Power Supplies Product Tour - (HTML / English)</a>
+                                    <a href="/resources/mx-series-power-supplies-product-tour">MX Series Power Supplies Product Tour - (HTML / English)</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="views-table cols-0">
+                        <caption>
+                            <h3>Reviews</h3>
+                        </caption>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/resources/eev-blog-review-mx100tp">EEV Blog review MX100TP - (HTML / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -437,22 +444,22 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200-firmware-update-v4-hardware-v429-408">QPX1200 Firmware Update for V4 Hardware (V4.29-4.08) - (HEX / English)</a>
+                                    <a href="/resources/mx100qp-firmware-file-main-v108-interface-v202">MX100QP firmware file (Main V1.08, Interface V2.02) - (HEX / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200-interface-firmware-update-v408">QPX1200 Interface Firmware Update V4.08 - (HEX / English)</a>
+                                    <a href="/resources/mx100qp-s2-and-mx103qp-s2-firmware-file-main-v205-interface-v202">MX100QP S2 and MX103QP S2 firmware file (Main V2.05, Interface V2.02) - (HEX / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx600dp-firmware-update-v209">QPX600DP Firmware Update V2.09 - (HEX / English)</a>
+                                    <a href="/resources/mx100tp-firmware-file-main-v106-interface-v107">MX100TP firmware file (Main V1.06, Interface V1.07) - (HEX / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx750sp-firmware-version-103">QPX750SP firmware version 1.03 - (ZIP / English)</a>
+                                    <a href="/resources/mx180tp-firmware-file-main-v108-interface-v109">MX180TP firmware file (Main V1.08, Interface V1.09) - (HEX / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -464,34 +471,22 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx-series-power-supplies-combined-labview-driver-and-labwindows-cvi-driver-v141">QPX series Power Supplies combined LabVIEW Driver and LabWindows CVI Driver V1.4.1 - (ZIP / English)</a>
+                                    <a href="/resources/mx-series-power-supplies-ivi-driver-v122-32-bit">MX Series Power Supplies IVI Driver V1.22 32-bit - (ZIP / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx-series-power-supplies-ivi-driver-v141">QPX series Power Supplies IVI Driver V1.4.1 - (ZIP / English)</a>
+                                    <a href="/resources/mx-series-power-supplies-ivi-driver-v122-64-bit">MX Series Power Supplies IVI Driver V1.22 64-bit - (ZIP / English)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/mx-series-power-supplies-combined-labview-driver-and-labwindows-cvi-driver-v122">MX Series Power Supplies, combined LabVIEW Driver and LabWindows CVI Driver V1.2.2 - (ZIP / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href="/resources/usb-driver-v211">USB Driver V2.11 - (ZIP / English)</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="views-table cols-0">
-                        <caption>
-                            <h3>Drawings</h3>
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="/resources/qpx1200-power-supplies-mechanical-drawing">QPX1200 Power Supplies Mechanical Drawing - (PDF / English)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/qpx600-power-supplies-mechanical-drawing">QPX600 Power Supplies Mechanical Drawing - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -515,7 +510,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx-series-dc-power-supplies-data-sheet-en-issue-3">QPX Series DC Power Supplies Data Sheet EN Issue 3 - (PDF / English)</a>
+                                    <a href="/resources/mx-series-dc-power-supplies-data-sheet-en-issue-11">MX Series DC Power Supplies Data Sheet EN Issue 11 - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -527,137 +522,107 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200-bedienungsanleitung-auf-deutsch-issue-3">QPX1200 Bedienungsanleitung auf Deutsch - Issue 3 - (PDF / German)</a>
+                                    <a href="/resources/gpib-option-fitting-instructions-issue-4">GPIB Option Fitting Instructions - Issue 4 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200-instrucciones-en-espanol-issue-3">QPX1200 Instrucciones en Espanol - Issue 3 - (PDF / Spanish)</a>
+                                    <a href="/resources/mx-q-mx-qp-series-2-instruction-manual-de-issue-1">MX-Q &amp; MX-QP Series 2 Instruction Manual DE Issue 1 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200-instruction-manual-issue-3">QPX1200 Instruction Manual - Issue 3 - (PDF / English)</a>
+                                    <a href="/resources/mx-q-mx-qp-series-2-instruction-manual-en-issue-1">MX-Q &amp; MX-QP Series 2 Instruction Manual EN Issue 1 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200-instructions-en-francais-issue-3">QPX1200 Instructions en Francais - Issue 3 - (PDF / French)</a>
+                                    <a href="/resources/mx-q-mx-qp-series-2-instruction-manual-es-issue-1">MX-Q &amp; MX-QP Series 2 Instruction Manual ES Issue 1 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200-istruzioni-italiano-issue-3">QPX1200 Istruzioni in Italiano - Issue 3 - (PDF / Italian)</a>
+                                    <a href="/resources/mx-q-mx-qp-series-2-instruction-manual-fr-issue-1">MX-Q &amp; MX-QP Series 2 Instruction Manual FR Issue 1 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200l-bedienungsanleitung-auf-deutsch-issue-8">QPX1200L Bedienungsanleitung auf Deutsch - Issue 8 - (PDF / German)</a>
+                                    <a href="/resources/mx-q-mx-qp-series-2-instruction-manual-it-issue-1">MX-Q &amp; MX-QP Series 2 Instruction Manual IT Issue 1 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200l-instrucciones-en-espanol-issue-8">QPX1200L Instrucciones en Espanol - Issue 8 - (PDF / Spanish)</a>
+                                    <a href="/resources/mx100q-mx100qp-instruction-manual-issue-2">MX100Q &amp; MX100QP Instruction Manual - Issue 2 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200l-instruction-manual-issue-8">QPX1200L Instruction Manual - Issue 8 - (PDF / English)</a>
+                                    <a href="/resources/mx100q-mx100qp-bedienungsanleitung-auf-deutsch-issue-2">MX100Q MX100QP Bedienungsanleitung auf Deutsch - Issue 2 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200l-instructions-en-francais-issue-8">QPX1200L Instructions en Francais - Issue 8 - (PDF / French)</a>
+                                    <a href="/resources/mx100q-mx100qp-instrucciones-en-espanol-issue-2">MX100Q MX100QP Instrucciones en Espanol - Issue 2 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200l-istruzioni-italiano-issue-8">QPX1200L Istruzioni in Italiano - Issue 8 - (PDF / Italian)</a>
+                                    <a href="/resources/mx100q-mx100qp-instructions-en-francais-issue-2">MX100Q MX100QP Instructions en Francais - Issue 2 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200s-sp-bedienungsanleitung-auf-deutsch-issue-13">QPX1200S &amp; SP Bedienungsanleitung auf Deutsch - Issue 13 - (PDF / German)</a>
+                                    <a href="/resources/mx100q-mx100qp-istruzioni-italiano-issue-2">MX100Q MX100QP Istruzioni in Italiano - Issue 2 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200s-sp-instrucciones-en-espanol-issue-13">QPX1200S &amp; SP Instrucciones en Espanol - Issue 13 - (PDF / Spanish)</a>
+                                    <a href="/resources/mx100t-mx100tp-bedienungsanleitung-auf-deutsch-issue-8">MX100T &amp; MX100TP Bedienungsanleitung auf Deutsch - Issue 8 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200s-sp-instruction-manual-issue-13">QPX1200S &amp; SP Instruction Manual - Issue 13 - (PDF / English)</a>
+                                    <a href="/resources/mx100t-mx100tp-instrucciones-en-espanol-issue-8">MX100T &amp; MX100TP Instrucciones en Espanol - Issue 8 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200s-sp-instructions-en-francais-issue-13">QPX1200S &amp; SP Instructions en Francais - Issue 13 - (PDF / French)</a>
+                                    <a href="/resources/mx100t-mx100tp-instruction-manual-issue-8">MX100T &amp; MX100TP Instruction Manual - Issue 8 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx1200s-sp-istruzioni-italiano-issue-13">QPX1200S &amp; SP Istruzioni in Italiano - Issue 13 - (PDF / Italian)</a>
+                                    <a href="/resources/mx100t-mx100tp-instructions-en-francais-issue-8">MX100T &amp; MX100TP Instructions en Francais - Issue 8 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx600-addendum-48511-1461-iss1">QPX600 Addendum 48511-1461 Iss1 - (PDF / English)</a>
+                                    <a href="/resources/mx100t-mx100tp-istruzioni-italiano-issue-8">MX100T &amp; MX100TP Istruzioni in Italiano - Issue 8 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx600d-dp-bedienungsanleitung-auf-deutsch-issue-14">QPX600D &amp; DP Bedienungsanleitung auf Deutsch - Issue 14 - (PDF / German)</a>
+                                    <a href="/resources/mx180t-mx180tp-bedienungsanleitung-auf-deutsch-issue-7">MX180T &amp; MX180TP Bedienungsanleitung auf Deutsch - Issue 7 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx600d-dp-instrucciones-en-espanol-issue-14">QPX600D &amp; DP Instrucciones en Espanol - Issue 14 - (PDF / Spanish)</a>
+                                    <a href="/resources/mx180t-mx180tp-instrucciones-en-espanol-issue-7">MX180T &amp; MX180TP Instrucciones en Espanol - Issue 7 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx600d-dp-instruction-manual-issue-14">QPX600D &amp; DP Instruction Manual - Issue 14 - (PDF / English)</a>
+                                    <a href="/resources/mx180t-mx180tp-instruction-manual-issue-7">MX180T &amp; MX180TP Instruction Manual - Issue 7 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx600d-dp-instructions-en-francais-issue-14">QPX600D &amp; DP Instructions en Francais - Issue 14 - (PDF / French)</a>
+                                    <a href="/resources/mx180t-mx180tp-instructions-en-francais-issue-7">MX180T &amp; MX180TP Instructions en Francais - Issue 7 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/qpx600d-dp-istruzioni-italiano-issue-14">QPX600D &amp; DP Istruzioni in Italiano - Issue 14 - (PDF / Italian)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/qpx750sp-bedienungsanleitung-auf-deutsch-issue-1">QPX750SP Bedienungsanleitung auf Deutsch - Issue 1 - (PDF / German)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/qpx750sp-instrucciones-en-espanol-issue-1">QPX750SP Instrucciones en Espanol - Issue 1 - (PDF / Spanish)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/qpx750sp-instruction-manual-issue-1">QPX750SP Instruction Manual - Issue 1 - (PDF / English)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/qpx750sp-instructions-en-francais-issue-1">QPX750SP Instructions en Francais - Issue 1 - (PDF / French)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/qpx750sp-istruzioni-italiano-issue-1">QPX750SP Istruzioni in Italiano - Issue 1 - (PDF / Italian)</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="/resources/rm310-qpx-series-rackmount-instruction-leaflet-issue-2">RM310 QPX Series Rackmount Instruction Leaflet - Issue 2 - (PDF / English)</a>
+                                    <a href="/resources/mx180t-mx180tp-istruzioni-italiano-issue-7">MX180T &amp; MX180TP Istruzioni in Italiano - Issue 7 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -682,18 +647,26 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                                     <a href="/resources/test-bridge-software">Test Bridge Software - (MSI / English)</a>
                                 </td>
                             </tr>
+                        </tbody>
+                    </table>
+                    <table class="views-table cols-0">
+                        <caption>
+                            <h3>YouTube Videos</h3>
+                        </caption>
+                        <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/tti-firmware-transfer-utility">TTi Firmware Transfer Utility - (ZIP / English)</a>
+                                    <a href="/resources/aim-tti-mx-series-introductory-video">Aim-TTi MX Series introductory video - (YouTube Link / English)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/resources/aim-tti-mx100t-dc-power-supply-introductory-video">Aim-TTi MX100T DC Power Supply introductory video - (YouTube Link / English)</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-
-
-
 
 
             </div>
@@ -706,6 +679,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
     </div>
 
     <?php require_once('../../../common/footer.php'); ?>
+
     <script src="<?php echo $domain; ?>assets/js/product-carousel.js"></script>
     <script src="<?php echo $domain; ?>assets/js/currency-selection.js"></script>
     <script src="<?php echo $domain; ?>assets/js/add-to-quatation.js"></script>
