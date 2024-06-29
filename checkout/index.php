@@ -122,16 +122,18 @@ $title = "Quotation | Aim-TTi India";
         }
 
         #quotationformsubmit {
-            margin-top: 8px;
+            /* margin-top: 200px; */
             width: auto !important;
             padding: 2px 4px;
 
             background-color: #667788;
             border: none;
-            margin-top: 2px;
-            padding: 4px 8px;
+            margin-top: 10px;
+            padding: 6px 10px;
             color: white;
             font-weight: 600;
+            font-size: 16px;
+            
         }
     </style>
 </head>
@@ -185,7 +187,8 @@ $title = "Quotation | Aim-TTi India";
                     <h2>Billing information</h2>
                     <div class="form-group">
                         <label for="organization">Organization Name</label>
-                        <input type="text" id="organization" name="organization">
+                        <span style="color: red !important; display: inline; float: none;">*</span>
+                        <input type="text" id="organization" name="organization" required>
                     </div>
 
 
@@ -294,7 +297,7 @@ $title = "Quotation | Aim-TTi India";
                             <option value="Hong Kong">Hong Kong</option>
                             <option value="Hungary">Hungary</option>
                             <option value="Iceland">Iceland</option>
-                            <option value="India">India</option>
+                            <option selected="selected" value="India">India</option>
                             <option value="Indonesia">Indonesia</option>
                             <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
                             <option value="Iraq">Iraq</option>
@@ -464,7 +467,8 @@ $title = "Quotation | Aim-TTi India";
 
                     <div class="form-group">
                         <label for="pincode">Postal Code</label>
-                        <input type="text" id="pincode" name="pincode">
+                        <span style="color: red !important; display: inline; float: none;">*</span>
+                        <input type="text" id="pincode" name="pincode" required>
                     </div>
 
 
@@ -614,7 +618,7 @@ $title = "Quotation | Aim-TTi India";
                                 <option value="Hong Kong">Hong Kong</option>
                                 <option value="Hungary">Hungary</option>
                                 <option value="Iceland">Iceland</option>
-                                <option value="India">India</option>
+                                <option selected="selected" value="India">India</option>
                                 <option value="Indonesia">Indonesia</option>
                                 <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
                                 <option value="Iraq">Iraq</option>
@@ -774,6 +778,7 @@ $title = "Quotation | Aim-TTi India";
 
                         <div class="form-group">
                             <label for="shippingPincode">Postal Code</label>
+                            <span style="color: red !important; display: inline; float: none;">*</span>
                             <input type="text" id="shippingPincode" name="shippingPincode">
                         </div>
 

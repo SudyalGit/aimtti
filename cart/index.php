@@ -67,9 +67,11 @@ $title = "Quotation | Aim-TTi India";
             background-color: #667788;
             border: none;
             margin-top: 2px;
-            padding: 4px 8px;
+            padding: 6px 10px;
             color: white;
             font-weight: 600;
+            font-size: 16px;
+            margin-right: 15px;
         }
 
         .request-quotation-btn a {
