@@ -163,7 +163,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <li>Duplicate power and sense terminals at rear (P models)</li>
                     </ul>
                     <br>
-                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-QL_Series_II_DC_Power_Supplies_Data_Sheet_EN_82100-1190-4.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a href="<?php echo $domain?>datasheets/AIM-QL_Series_II_DC_Power_Supplies_Data_Sheet_EN_82100-1190-4.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
                 </div>
             </div>
 

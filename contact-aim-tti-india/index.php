@@ -41,6 +41,15 @@ if (isset($_POST["contactformsubmit"])) {
 
         // echo 'form submitted';
         $email = $_POST['email'];
+        $requestType = $_POST['request-type'];
+        $name = $_POST['name'];
+        $organization = $_POST['organization'];
+        $address = $_POST['address'];
+        $city = $_POST['city'];
+        $postcode = $_POST['postcode'];
+        $country = $_POST['country'];
+        $telephone = $_POST['telephone'];
+        $message = $_POST['message'];
 
 
         try {
@@ -69,8 +78,8 @@ if (isset($_POST["contactformsubmit"])) {
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Quote for Aim-TTI Products';
-            $mail->Body    = '<b> Thanks for your giving us an opportunity to quote </b>';
+            $mail->Subject = 'Aim TTi India Team';
+            $mail->Body    = '';
             $mail->AltBody = 'Kindly find enclosed our best offer for Aim-TTi Products';
 
             $mail->send();

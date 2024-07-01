@@ -182,7 +182,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <li>High current low voltage output on triple output model</li>
                     </ul>
                     <br>
-                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-PL+PL-P_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1350-6.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a href="<?php echo $domain?>datasheets/AIM-PL+PL-P_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1350-6.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
                 </div>
             </div>
 

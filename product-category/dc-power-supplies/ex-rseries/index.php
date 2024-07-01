@@ -126,7 +126,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <li>Multi-mode dual model 2x(75V/2A) or 75V/4A or 150V/2A</li>
                     </ul>
                     <br>
-                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-EL-R+EX-R_series_DC_power_supplies_data_sheet-Iss1.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a href="<?php echo $domain?>datasheets/AIM-EL-R+EX-R_series_DC_power_supplies_data_sheet-Iss1.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
                 </div>
             </div>
 

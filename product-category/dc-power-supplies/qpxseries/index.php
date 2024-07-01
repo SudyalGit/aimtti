@@ -204,7 +204,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <li>USB and LAN (LXI) interfaces with GPIB optional (QPX600DP, QPX1200SP and QPX750SP)</li>
                     </ul>
                     <br>
-                    <div> <span><a href="https://resources.aimtti.com/datasheets/AIM-QPX_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1580-3.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a href="<?php echo $domain?>datasheets/AIM-QPX_Series_DC_Power_Supplies_Data_Sheet_EN_82100-1580-3.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
                 </div>
             </div>
 
