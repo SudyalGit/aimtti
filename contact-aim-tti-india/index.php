@@ -56,20 +56,20 @@ if (isset($_POST["contactformsubmit"])) {
             //Server settings
             // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
             $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $mail->Host       = 'mail.aimtti.co.in';                    //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'sudhyal99@gmail.com';                     //SMTP username
-            $mail->Password   = 'vvdpvqyjbbinktul';                               //SMTP password
+            $mail->Username   = 'in-sales@aimtti.co.in';                     //SMTP username
+            $mail->Password   = 'In-sales@2324';                               //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS` 
 
             //Recipients
-            $mail->setFrom('sudhyal99@gmail.com', 'Mailer');
+            $mail->setFrom('in-sales@aimtti.co.in', 'Aim-TTi Contact us Form');
             $mail->addAddress($email);     //Add a recipient
-            $mail->addAddress('sudhyal99@gmail.com');               //Name is optional
-            $mail->addReplyTo('sudhyal99@gmail.com', 'Information');
-            $mail->addCC('sudhyal99@gmail.com');
-            $mail->addBCC('sudhyal99@gmail.com');
+            $mail->addAddress('in-sales@aimtti.co.in');               //Name is optional
+            $mail->addReplyTo('in-sales@aimtti.co.in', 'Information');
+            $mail->addCC('in-sales@aimtti.co.in');
+            $mail->addBCC('in-sales@aimtti.co.in');
 
             // Attachments
             // $mail->addAttachment('quotation.pdf');         //Add attachments
@@ -79,8 +79,16 @@ if (isset($_POST["contactformsubmit"])) {
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = 'Aim TTi India Team';
-            $mail->Body    = '';
-            $mail->AltBody = 'Kindly find enclosed our best offer for Aim-TTi Products';
+            $mail->Body    = "Request Type : $requestType <br><br>
+            Name : $name<br><br>
+            Organization : $organization<br><br>
+            Address : $address<br><br>
+            City : $city<br><br>
+            Postcode : $postcode<br><br>
+            Country : $country<br><br>
+            Telephone : $telephone<br><br>
+            Message : $message<br><br>";
+            $mail->AltBody = '';
 
             $mail->send();
             $message = "Your Request has been sent successfully";
@@ -208,9 +216,10 @@ if (isset($_POST["contactformsubmit"])) {
 
                     <div class="form-group">
                         <label for="request-type">Request type:</label>
+                        <span style="color: red !important; display: inline; float: none;">*</span>
                         <!-- <span style="color: red !important; display: inline; float: none;">*</span> -->
-                        <select name="request-type" id="request-type">
-                            <option value="none">None</option>
+                        <select name="request-type" id="request-type" required>
+                            <!-- <option value="none">None</option> -->
                             <option value="Product Information">Product Information</option>
                             <option value="Sales Enquiry">Sales enquiry</option>
                             <option value="Technical query">Technical query</option>
@@ -251,7 +260,8 @@ if (isset($_POST["contactformsubmit"])) {
 
                     <div class="form-group">
                         <label for="address">Address:</label>
-                        <input type="text" id="address" name="address">
+                        <span style="color: red !important; display: inline; float: none;">*</span>
+                        <input type="text" id="address" name="address" required>
                     </div>
 
                     <br>
@@ -259,14 +269,16 @@ if (isset($_POST["contactformsubmit"])) {
 
                     <div class="form-group">
                         <label for="city">Town/City:</label>
-                        <input type="text" id="city" name="city">
+                        <span style="color: red !important; display: inline; float: none;">*</span>
+                        <input type="text" id="city" name="city" required>
                     </div>
 
                     <br>
 
                     <div class="form-group">
                         <label for="postcode">Postcode/ZIP:</label>
-                        <input type="text" id="postcode" name="postcode">
+                        <span style="color: red !important; display: inline; float: none;">*</span>
+                        <input type="text" id="postcode" name="postcode" required>
                     </div>
 
                     <br>
@@ -288,10 +300,11 @@ if (isset($_POST["contactformsubmit"])) {
 
                     <div class="form-group">
                         <label for="message">Message:</label>
+                        <span style="color: red !important; display: inline; float: none;">*</span>
                         <p style="font-size: 10px">
                             Please let us have as much detail as possible. If this is a technical enquiry, please let us know the serial number of your unit (which allows us to know its build configuration) and the firmware version(s) if applicable.
                         </p>
-                        <textarea style="width: 100%; height: 100px" id="message" name="message"></textarea>
+                        <textarea style="width: 100%; height: 100px" id="message" name="message" required></textarea>
                     </div>
 
                     <br>

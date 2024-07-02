@@ -60,7 +60,7 @@ require_once('../config/index.php');
         <div class="content">
 
 
-            <h1>Products</h1>
+            <h1>Product Tour</h1>
 
             <table class="">
                 <caption><a href="<?php echo $domain ?>product-category/dc-power-supplies"></a>

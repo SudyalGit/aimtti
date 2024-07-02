@@ -122,7 +122,7 @@
             <br><br>
 
             <h3>Product Tours</h3>
-            <p>Visit the Product Tours Index Page for a list of products for which a tour is available.</p>
+            <p>Visit the <a href="<?php echo $domain; ?>product-tours">Product Tours Index Page</a> for a list of products for which a tour is available.</p>
 
         </div>
     </div>

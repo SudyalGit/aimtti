@@ -11,7 +11,7 @@ if (getCookie("selectedCurrency")) {
 }
 
 const exchangeRates = {
-  INR: 130,
+  INR: 131,
 };
 
 if (currencySelector.value == "INR") {

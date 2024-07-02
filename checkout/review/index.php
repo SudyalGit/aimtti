@@ -6,7 +6,7 @@ $title = "Quotation | Aim-TTi India";
 
 
 <?php
-session_start();
+// session_start();
 if (isset($_POST['quotationformsubmit'])) {
     // echo 'submitted';
     $invisible = $_POST['invisible'];

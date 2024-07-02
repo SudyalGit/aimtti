@@ -1,4 +1,14 @@
-<?php $domain = "http://localhost/mywork/" ?>
+<?php $domain = "http://localhost/mywork/"; ?>
+
+<?php
+session_start();
+$icon = '<a href="' . $domain . 'user/login"><img class="login" src="' . $domain . 'assets/images/login.png" alt="profile-logo"></a>';
+// check user is loggedin or not
+if (isset($_SESSION['user_id'])) {
+    // echo $_SESSION['user_id'];
+    $icon = '<a href="' . $domain . 'user/logout"><img class="login" src="' . $domain . 'assets/images/logout.png" alt="profile-logo"></a>';
+}
+?>
 
 <?php echo '
 <header>
@@ -15,7 +25,7 @@
                 <option value="USD">USD</option>
                 <option value="GBP">GBP</option>
             </select>
-            <a href=""><img class="login" src="' . $domain . 'assets/images/login.png" alt="profile-logo"></a>
+            ' . $icon . '
             <a class="cart" href="">
                 <p>🛒&nbsp;Empty</p>
             </a>
@@ -27,9 +37,9 @@
         <a href="' . $domain . 'news">What\'s New</a>
         <a href="' . $domain . 'about-aim-tti">About Aim-TTi</a>
         <a href="' . $domain . 'product-catalogues-and-data-sheets">Catalogues</a>
-        <a href="">Where to buy</a>
+        <a href="' . $domain . 'dealers">Where to buy</a>
         <a href="' . $domain . 'support">Support</a>
-        <a href="'. $domain .'contact-aim-tti-india">Contact Us</a>
+        <a href="' . $domain . 'contact-aim-tti-india">Contact Us</a>
     </div>
 </header>
 <div class="alert-msg">

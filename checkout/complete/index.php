@@ -5,6 +5,7 @@ require_once('../../config/index.php');
 $title = "Quotation | Aim-TTi India";
 $message = "";
 $success = true;
+$color = '#398d39';
 ?>
 
 
@@ -85,20 +86,20 @@ try {
     //Server settings
     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'mail.aimtti.co.in';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'sudhyal99@gmail.com';                     //SMTP username
-    $mail->Password   = 'vvdpvqyjbbinktul';                               //SMTP password
+    $mail->Username   = 'in-sales@aimtti.co.in';                     //SMTP username
+    $mail->Password   = 'In-sales@2324';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS` 
 
     //Recipients
-    $mail->setFrom('sudhyal99@gmail.com', 'Mailer');
+    $mail->setFrom('in-sales@aimtti.co.in', 'Aim-TTi-Sales');
     $mail->addAddress($email);     //Add a recipient
-    $mail->addAddress('sudhyal99@gmail.com');               //Name is optional
-    $mail->addReplyTo('sudhyal99@gmail.com', 'Information');
-    $mail->addCC('sudhyal99@gmail.com');
-    $mail->addBCC('sudhyal99@gmail.com');
+    $mail->addAddress('in-sales@aimtti.co.in');               //Name is optional
+    $mail->addReplyTo('in-sales@aimtti.co.in', 'Information');
+    $mail->addCC('in-sales@aimtti.co.in');
+    $mail->addBCC('in-sales@aimtti.co.in');
 
     // Attachments
     $mail->addAttachment('quotation.pdf');         //Add attachments
@@ -108,12 +109,12 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Quote for Aim-TTI Products';
-    $mail->Body    = '<b> Thanks for your giving us an opportunity to quote </b>';
+    $mail->Body    = 'Thanks for your enquiry and giving us an opportunity to quote<br><br><br><br>Best Regards<br>Aim-TTi Sales Team<br> </b> <br> Call us: <a href="tel:+918076967694">+91 80 7696 7694</a>';
     $mail->AltBody = 'Kindly find enclosed our best offer for Aim-TTi Products';
 
     $mail->send();
     session_destroy();
-    $message = "THANKS! for your enquiry <br> Your Quotation has been sent to your registered email. Our Sales Team will get it touch with you shortly";
+    $message = "THANKS! for your enquiry <br>Your Quotation has been sent to your registered email id. Our Sales Team will get it touch with you shortly";
     echo '<script>
     localStorage.clear();
     </script>';
@@ -121,6 +122,7 @@ try {
 } catch (Exception $e) {
     $message = "Wrong Information Please try again";
     $success = false;
+    $color = "red";
     // echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
 ?>
@@ -174,13 +176,17 @@ try {
     <div class="main">
         <?php require_once('../../common/side-menu.php'); ?>
 
-        <div class="content">
+        <div style="margin-top: 6%; margin-left: 144px;" class="content">
 
-            <h1>
-                <?php $success ? print('Quotation Sent') : print('Quotation Not Sent'); ?>
+            <h1 style="color: <?php echo $color; ?>; font-weight: 500;">
+                <?php $success ? print('(✓) Quotation Sent') : print('(X) Quotation Not Sent'); ?>
             </h1>
+            
+            <p>
+                <?php echo $message; ?>
+            </p>
 
-            <?php echo $message; ?>
+            
         </div>
     </div>
 
