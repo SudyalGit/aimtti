@@ -1,7 +1,10 @@
-<?php $domain = "http://localhost/mywork/"; ?>
+<?php 
+// session_start();
+$domain = "http://localhost/mywork/"; 
+?>
 
 <?php
-session_start();
+
 $icon = '<a href="' . $domain . 'user/login"><img class="login" src="' . $domain . 'assets/images/login.png" alt="profile-logo"></a>';
 // check user is loggedin or not
 if (isset($_SESSION['user_id'])) {
@@ -51,3 +54,4 @@ if (isset($_SESSION['user_id'])) {
     </div>
 </div>
 ';
+?>

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once('../../config/index.php');
 
 $title = "Quotation | Aim-TTi India";

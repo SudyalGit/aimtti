@@ -1,5 +1,7 @@
 <?php
-require_once('../../config/index.php');
+session_start();
+require_once ('../../config/index.php');
+
 
 $title = "Quotation | Aim-TTi India";
 ?>
@@ -71,12 +73,12 @@ if (isset($_POST['quotationformsubmit'])) {
     // echo "Contact: $contact<br>";
 
     if (isset($shippingInfo)) {
-        echo "<h3>Shipping Information</h3>";
-        echo "Organization: {$shippingInfo['organization']}<br>";
-        echo "Country: {$shippingInfo['country']}<br>";
-        echo "Address: {$shippingInfo['address']}<br>";
-        echo "City: {$shippingInfo['city']}<br>";
-        echo "Pincode: {$shippingInfo['pincode']}<br>";
+        // echo "<h3>Shipping Information</h3>";
+        // echo "Organization: {$shippingInfo['organization']}<br>";
+        // echo "Country: {$shippingInfo['country']}<br>";
+        // echo "Address: {$shippingInfo['address']}<br>";
+        // echo "City: {$shippingInfo['city']}<br>";
+        // echo "Pincode: {$shippingInfo['pincode']}<br>";
     }
 }
 ?>
@@ -133,7 +135,8 @@ if (isset($_POST['quotationformsubmit'])) {
             padding: 4px 10px;
             background-color: white;
         }
-        #sendmailandpdf{
+
+        #sendmailandpdf {
             background-color: #667788;
             border: none;
             margin-top: 2px;
@@ -141,7 +144,8 @@ if (isset($_POST['quotationformsubmit'])) {
             color: white;
             font-weight: 600;
         }
-        .price-cell{
+
+        .price-cell {
             width: 10%;
         }
     </style>
@@ -150,12 +154,20 @@ if (isset($_POST['quotationformsubmit'])) {
 <body>
     <div id="quotation"></div>
 
+  
 
 
-    <?php require_once('../../common/header.php'); ?>
+    <?php
+    // print_R($_SESSION);
+    ?>
+
+    <?php require_once ('../../common/header.php'); ?>
+    <?php
+    // print_R($_SESSION);
+    ?>
 
     <div class="main">
-        <?php require_once('../../common/side-menu.php'); ?>
+        <?php require_once ('../../common/side-menu.php'); ?>
 
         <div class="content">
 
@@ -182,29 +194,29 @@ if (isset($_POST['quotationformsubmit'])) {
                                     <?php
                                     $grandtotal = 0;
                                     $currencysign = "";
-                            
+
                                     if ($_SESSION["invisiblecurrency"] == "EUR") {
                                         $currencysign = "€";
                                     } elseif ($_SESSION["invisiblecurrency"] == "GBP") {
                                         $currencysign = "£";
                                     } elseif ($_SESSION["invisiblecurrency"] == "USD") {
                                         $currencysign = "$";
-                                    }else{
+                                    } else {
                                         $currencysign = "₹";
                                     }
                                     // echo $currencysign;
-
+                                    
                                     foreach ($_SESSION['invisible'] as $model) {
-                                        if($_SESSION['invisiblecurrency'] === 'USD'){
+                                        if ($_SESSION['invisiblecurrency'] === 'USD') {
                                             $unitprice = round($model['modelPriceUSD']);
                                         }
-                                        if($_SESSION['invisiblecurrency'] === 'EUR'){
+                                        if ($_SESSION['invisiblecurrency'] === 'EUR') {
                                             $unitprice = round($model['modelPrice']);
                                         }
-                                        if($_SESSION['invisiblecurrency'] === 'GBP'){
+                                        if ($_SESSION['invisiblecurrency'] === 'GBP') {
                                             $unitprice = round($model['modelPriceGBP']);
                                         }
-                                        if($_SESSION['invisiblecurrency'] === 'INR'){
+                                        if ($_SESSION['invisiblecurrency'] === 'INR') {
                                             $unitprice = round($model['modelPriceGBP'] * $_SESSION['goldennumber']);
                                         }
                                         $total = $unitprice * $model['quantity'];
@@ -279,12 +291,13 @@ if (isset($_POST['quotationformsubmit'])) {
             </table>
 
             <form action="http://localhost/mywork/checkout/complete/index.php" method="post">
-                <input class="cursor" id="sendmailandpdf" type="submit" name="sendmailandpdf" id="" value="Request for Quote">
+                <input class="cursor" id="sendmailandpdf" type="submit" name="sendmailandpdf" id=""
+                    value="Request for Quote">
             </form>
         </div>
     </div>
 
-    <?php require_once('../../common/footer.php'); ?>
+    <?php require_once ('../../common/footer.php'); ?>
 
     <script src="<?php echo $domain; ?>assets/js/currency-selection.js"></script>
     <script src="<?php echo $domain; ?>assets/js/add-to-quatation.js"></script>

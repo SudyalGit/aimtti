@@ -1,4 +1,4 @@
-<?php require_once('../../../config/index.php');
+<?php require_once ('../../../config/index.php');
 
 $heading = "CPX Series";
 $title = "CPX Series Bench/System/ATE Programmable DC Power Supply | Aim-TTi Instruments";
@@ -76,7 +76,8 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="https://aimtti.co.in/favicon.ico" type="image/vnd.microsoft.icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
@@ -101,34 +102,47 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 </head>
 
 <body>
-    <?php require_once('../../../common/header.php') ?>
+    <?php require_once ('../../../common/header.php') ?>
 
     <div class="main">
-        <?php require_once('../../../common/side-menu.php'); ?>
+        <?php require_once ('../../../common/side-menu.php'); ?>
 
         <div class="content">
             <h1><?php echo $heading ?></h1>
             <h2>
-                Bench/System/ATE Programmable DC Power Supply Single or Dual Outputs, 360 to 840 watts, with or without Remote Interfaces
+                Bench/System/ATE Programmable DC Power Supply Single or Dual Outputs, 360 to 840 watts, with or without
+                Remote Interfaces
             </h2>
 
             <div class="product-card">
                 <div class="product-card-carousel">
                     <div class="container">
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-CPX400DP-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400DP-1k.jpg" alt="Aim-TTi CPX400DP (CPX Series) DC Bench power supply">
+                            <img class="model-for-image cursor"
+                                data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-CPX400DP-1k.jpg"
+                                src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400DP-1k.jpg"
+                                alt="Aim-TTi CPX400DP (CPX Series) DC Bench power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-CPX400SP-1k.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400SP-1k.jpg" alt="Aim-TTi CPX400SP (CPX Series) DC Bench power supply">
+                            <img class="model-for-image cursor"
+                                data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-CPX400SP-1k.jpg"
+                                src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400SP-1k.jpg"
+                                alt="Aim-TTi CPX400SP (CPX Series) DC Bench power supply">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/cpx-pwr-curves.jpg" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/cpx-pwr-curves.jpg" alt="Aim-TTi CPX Series Power Envelope">
+                            <img class="model-for-image cursor"
+                                data-img="<?php echo $domain ?>sites/default/files/image/large/cpx-pwr-curves.jpg"
+                                src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/cpx-pwr-curves.jpg"
+                                alt="Aim-TTi CPX Series Power Envelope">
                         </div>
 
                         <div class="mySlides">
-                            <img class="model-for-image cursor" data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-Test_Bridge-1000px.png" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px.png" alt="Test Bridge Software for Aim-TTi power products">
+                            <img class="model-for-image cursor"
+                                data-img="<?php echo $domain ?>sites/default/files/image/large/AIM-Test_Bridge-1000px.png"
+                                src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px.png"
+                                alt="Test Bridge Software for Aim-TTi power products">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -137,23 +151,36 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 
                         <div class="row">
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400DP-1k.jpg" style="width:100%" onclick="currentSlide(1)" alt="Aim-TTi CPX400DP (CPX Series) DC Bench power supply">
+                                <img class="demo cursor"
+                                    src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400DP-1k.jpg"
+                                    style="width:100%" onclick="currentSlide(1)"
+                                    alt="Aim-TTi CPX400DP (CPX Series) DC Bench power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400SP-1k.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aim-TTi CPX400SP (CPX Series) DC Bench power supply">
+                                <img class="demo cursor"
+                                    src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-CPX400SP-1k.jpg"
+                                    style="width:100%" onclick="currentSlide(2)"
+                                    alt="Aim-TTi CPX400SP (CPX Series) DC Bench power supply">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/cpx-pwr-curves.jpg" style="width:100%" onclick="currentSlide(3)" alt="Aim-TTi CPX Series Power Envelope">
+                                <img class="demo cursor"
+                                    src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/cpx-pwr-curves.jpg"
+                                    style="width:100%" onclick="currentSlide(3)"
+                                    alt="Aim-TTi CPX Series Power Envelope">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px.png" style="width:100%" onclick="currentSlide(4)" alt="Test Bridge Software for Aim-TTi power products">
+                                <img class="demo cursor"
+                                    src="<?php echo $domain ?>sites/default/files/styles/product_medium/public/image/large/AIM-Test_Bridge-1000px.png"
+                                    style="width:100%" onclick="currentSlide(4)"
+                                    alt="Test Bridge Software for Aim-TTi power products">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="product-card-details">
                     <ul>
-                        <li>PowerFlex design gives variable voltage and current combinations within a maximum power range</li>
+                        <li>PowerFlex design gives variable voltage and current combinations within a maximum power
+                            range</li>
                         <li>Up to 60 volts and up to 20 amps</li>
                         <li>180 watts or 420 watts maximum per output</li>
                         <li>Isolated outputs can be wired in series or parallel</li>
@@ -168,7 +195,12 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <li>GPIB Option (P models only)</li>
                     </ul>
                     <br>
-                    <div> <span><a href="<?php echo $domain?>/datasheets/AIM-CPX_Series_DC_Power_Supplies_Data_sheet_EN_82100-1400-8.pdf" title="Link to this datasheet/brochure (opens in a new window or tab)" target="_blank"><img class="file-icon" alt="" title="application/pdf" src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF / English)</span> </div>
+                    <div> <span><a
+                                href="<?php echo $domain ?>/datasheets/AIM-CPX_Series_DC_Power_Supplies_Data_sheet_EN_82100-1400-8.pdf"
+                                title="Link to this datasheet/brochure (opens in a new window or tab)"
+                                target="_blank"><img class="file-icon" alt="" title="application/pdf"
+                                    src="<?php echo $domain ?>application-pdf.png"> Datasheet </a> - (PDF /
+                            English)</span> </div>
                 </div>
             </div>
 
@@ -177,10 +209,14 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
 
             <div class="model-series">
                 <div class="model-series-title">
-                    <div onclick="changeModelTitle(event)" data-id="model-title-product" class="cursor model-series-title-name">Product</div>
-                    <div onclick="changeModelTitle(event)" data-id="model-title-options" class="cursor model-series-title-name">Options</div>
-                    <div onclick="changeModelTitle(event)" data-id="model-title-accessories" class="cursor model-series-title-name">Accessories</div>
-                    <div onclick="changeModelTitle(event)" data-id="model-title-data" class="cursor model-series-title-name">Data and Downloads</div>
+                    <div onclick="changeModelTitle(event)" data-id="model-title-product"
+                        class="cursor model-series-title-name">Product</div>
+                    <div onclick="changeModelTitle(event)" data-id="model-title-options"
+                        class="cursor model-series-title-name">Options</div>
+                    <div onclick="changeModelTitle(event)" data-id="model-title-accessories"
+                        class="cursor model-series-title-name">Accessories</div>
+                    <div onclick="changeModelTitle(event)" data-id="model-title-data"
+                        class="cursor model-series-title-name">Data and Downloads</div>
                 </div>
 
 
@@ -399,7 +435,8 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx-series-dc-power-supplies-product-tour">CPX Series DC Power Supplies Product Tour - (HTML / English)</a>
+                                    <a href="">CPX Series DC Power
+                                        Supplies Product Tour - (HTML / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -411,7 +448,8 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx-series-interface-firmware-file-v420">CPX Series Interface firmware file V4.20 - (HEX / English)</a>
+                                    <a href="<?php echo $domain;?>resources/cpx-series-interface-firmware-file-v420">CPX Series Interface
+                                        firmware file V4.20 - (HEX / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -423,12 +461,14 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx-series-combined-labview-and-labwindows-cvi-driver-v140">CPX Series combined LabVIEW and LabWindows CVI Driver V1.4.0 - (ZIP / English)</a>
+                                    <a href="/resources/cpx-series-combined-labview-and-labwindows-cvi-driver-v140">CPX
+                                        Series combined LabVIEW and LabWindows CVI Driver V1.4.0 - (ZIP / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx-series-power-supplies-ivi-driver-v140">CPX Series Power Supplies IVI Driver V1.4.0 - (ZIP / English)</a>
+                                    <a href="/resources/cpx-series-power-supplies-ivi-driver-v140">CPX Series Power
+                                        Supplies IVI Driver V1.4.0 - (ZIP / English)</a>
                                 </td>
                             </tr>
                             <tr>
@@ -445,12 +485,14 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400dp-mechanical-drawing">CPX400DP Mechanical Drawing - (PDF / English)</a>
+                                    <a href="/resources/cpx400dp-mechanical-drawing">CPX400DP Mechanical Drawing - (PDF
+                                        / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400sp-mechanical-drawing">CPX400SP Mechanical Drawing - (PDF / English)</a>
+                                    <a href="/resources/cpx400sp-mechanical-drawing">CPX400SP Mechanical Drawing - (PDF
+                                        / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -462,7 +504,8 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/aim-tti-power-supplies-summary-catalogue-2021">AIM-TTi Power Supplies summary catalogue 2021 - (PDF / English)</a>
+                                    <a href="/resources/aim-tti-power-supplies-summary-catalogue-2021">AIM-TTi Power
+                                        Supplies summary catalogue 2021 - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -474,7 +517,8 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx-series-dc-power-supplies-data-sheet-en-issue-8">CPX Series DC Power Supplies Data sheet EN Issue 8 - (PDF / English)</a>
+                                    <a href="/resources/cpx-series-dc-power-supplies-data-sheet-en-issue-8">CPX Series
+                                        DC Power Supplies Data sheet EN Issue 8 - (PDF / English)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -486,92 +530,110 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx200-instruction-manual-issue-13">CPX200 Instruction Manual - Issue 13 - (PDF / English)</a>
+                                    <a href="/resources/cpx200-instruction-manual-issue-13">CPX200 Instruction Manual -
+                                        Issue 13 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx200d-dp-bedienungsanleitung-auf-deutsch-issue-9">CPX200D &amp; DP Bedienungsanleitung auf Deutsch - Issue 9 - (PDF / German)</a>
+                                    <a href="/resources/cpx200d-dp-bedienungsanleitung-auf-deutsch-issue-9">CPX200D
+                                        &amp; DP Bedienungsanleitung auf Deutsch - Issue 9 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx200d-dp-instrucciones-en-espanol-issue-9">CPX200D &amp; DP Instrucciones en Espanol - Issue 9 - (PDF / Spanish)</a>
+                                    <a href="/resources/cpx200d-dp-instrucciones-en-espanol-issue-9">CPX200D &amp; DP
+                                        Instrucciones en Espanol - Issue 9 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx200d-dp-instruction-manual-issue-9">CPX200D &amp; DP Instruction Manual - Issue 9 - (PDF / English)</a>
+                                    <a href="/resources/cpx200d-dp-instruction-manual-issue-9">CPX200D &amp; DP
+                                        Instruction Manual - Issue 9 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx200d-dp-instructions-en-francais-issue-9">CPX200D &amp; DP Instructions en Francais - Issue 9 - (PDF / French)</a>
+                                    <a href="/resources/cpx200d-dp-instructions-en-francais-issue-9">CPX200D &amp; DP
+                                        Instructions en Francais - Issue 9 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx200d-dp-istruzioni-italiano-issue-9">CPX200D &amp; DP Istruzioni in Italiano - Issue 9 - (PDF / Italian)</a>
+                                    <a href="/resources/cpx200d-dp-istruzioni-italiano-issue-9">CPX200D &amp; DP
+                                        Istruzioni in Italiano - Issue 9 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400-instruction-manual">CPX400 Instruction Manual - (PDF / English, French, German, Italian, Spanish)</a>
+                                    <a href="/resources/cpx400-instruction-manual">CPX400 Instruction Manual - (PDF /
+                                        English, French, German, Italian, Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400a-instruction-manual-issue-5">CPX400A Instruction Manual - Issue 5 - (PDF / English, French, German, Italian, Spanish)</a>
+                                    <a href="/resources/cpx400a-instruction-manual-issue-5">CPX400A Instruction Manual -
+                                        Issue 5 - (PDF / English, French, German, Italian, Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400d-dp-bedienungsanleitung-auf-deutsch-issue-14">CPX400D &amp; DP Bedienungsanleitung auf Deutsch - Issue 14 - (PDF / German)</a>
+                                    <a href="/resources/cpx400d-dp-bedienungsanleitung-auf-deutsch-issue-14">CPX400D
+                                        &amp; DP Bedienungsanleitung auf Deutsch - Issue 14 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400d-dp-instrucciones-en-espanol-issue-14">CPX400D &amp; DP Instrucciones en Espanol - Issue 14 - (PDF / Spanish)</a>
+                                    <a href="/resources/cpx400d-dp-instrucciones-en-espanol-issue-14">CPX400D &amp; DP
+                                        Instrucciones en Espanol - Issue 14 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400d-dp-instruction-manual-issue-14">CPX400D &amp; DP Instruction Manual - Issue 14 - (PDF / English)</a>
+                                    <a href="/resources/cpx400d-dp-instruction-manual-issue-14">CPX400D &amp; DP
+                                        Instruction Manual - Issue 14 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400d-dp-instructions-en-francais-issue-14">CPX400D &amp; DP Instructions en Francais - Issue 14 - (PDF / French)</a>
+                                    <a href="/resources/cpx400d-dp-instructions-en-francais-issue-14">CPX400D &amp; DP
+                                        Instructions en Francais - Issue 14 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400d-dp-istruzioni-italiano-issue-14">CPX400D &amp; DP Istruzioni in Italiano - Issue 14 - (PDF / Italian)</a>
+                                    <a href="/resources/cpx400d-dp-istruzioni-italiano-issue-14">CPX400D &amp; DP
+                                        Istruzioni in Italiano - Issue 14 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400s-sa-sp-bedienungsanleitung-auf-deutsch-issue-10">CPX400S, SA &amp; SP Bedienungsanleitung auf Deutsch - Issue 10 - (PDF / German)</a>
+                                    <a href="/resources/cpx400s-sa-sp-bedienungsanleitung-auf-deutsch-issue-10">CPX400S,
+                                        SA &amp; SP Bedienungsanleitung auf Deutsch - Issue 10 - (PDF / German)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400s-sa-sp-instrucciones-en-espanol-issue-10">CPX400S, SA &amp; SP Instrucciones en Espanol - Issue 10 - (PDF / Spanish)</a>
+                                    <a href="/resources/cpx400s-sa-sp-instrucciones-en-espanol-issue-10">CPX400S, SA
+                                        &amp; SP Instrucciones en Espanol - Issue 10 - (PDF / Spanish)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400s-sa-sp-instruction-manual-issue-10">CPX400S, SA &amp; SP Instruction Manual - Issue 10 - (PDF / English)</a>
+                                    <a href="/resources/cpx400s-sa-sp-instruction-manual-issue-10">CPX400S, SA &amp; SP
+                                        Instruction Manual - Issue 10 - (PDF / English)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400s-sa-sp-instructions-en-francais-issue-10">CPX400S, SA &amp; SP Instructions en Francais - Issue 10 - (PDF / French)</a>
+                                    <a href="/resources/cpx400s-sa-sp-instructions-en-francais-issue-10">CPX400S, SA
+                                        &amp; SP Instructions en Francais - Issue 10 - (PDF / French)</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="/resources/cpx400s-sa-sp-istruzioni-italiano-issue-10">CPX400S, SA &amp; SP Istruzioni in Italiano - Issue 10 - (PDF / Italian)</a>
+                                    <a href="/resources/cpx400s-sa-sp-istruzioni-italiano-issue-10">CPX400S, SA &amp; SP
+                                        Istruzioni in Italiano - Issue 10 - (PDF / Italian)</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -583,7 +645,8 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="/resources/firmware-flash-update-utility">Firmware Flash update utility - (ZIP / English)</a>
+                                    <a href="/resources/firmware-flash-update-utility">Firmware Flash update utility -
+                                        (ZIP / English)</a>
                                 </td>
                             </tr>
                             <tr>
@@ -608,7 +671,7 @@ if ($_COOKIE['selectedCurrency'] === 'EUR') {
         <img class="modal-content" id="img01">
     </div>
 
-    <?php require_once('../../../common/footer.php'); ?>
+    <?php require_once ('../../../common/footer.php'); ?>
 
     <script src="<?php echo $domain; ?>assets/js/product-carousel.js"></script>
     <script src="<?php echo $domain; ?>assets/js/currency-selection.js"></script>
