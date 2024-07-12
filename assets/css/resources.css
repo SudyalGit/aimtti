@@ -1,0 +1,35 @@
+.content .floated_left {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.content strong,
+.content b {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: #444;
+}
+.content a {
+  color: #0062a0;
+}
+.content a b {
+  color: #0062a0;
+}
+.content .half {
+  width: 50%;
+}
+.content .mt-100 {
+  margin-top: 100px;
+}
+.content .panel-2col-bricks .panel-col-first {
+  float: left;
+  width: 50%;
+}
+.content td img {
+  width: 32px;
+}/*# sourceMappingURL=resources.css.map */

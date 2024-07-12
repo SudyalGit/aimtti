@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+header {
+  width: 100%;
+  color: white;
+}
+
+.header-top {
+  width: 100%;
+  height: 70px;
+  padding: 6px 10px;
+  background-color: #667788;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top .left {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+}
+.header-top .left img {
+  height: 100%;
+  width: auto;
+}
+.header-top .left .slogan {
+  font-weight: 300;
+  font-size: 20px;
+}
+.header-top .right {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.header-top .right .select-currency {
+  color: white;
+  background-color: rgba(17, 51, 85, 0.3);
+  border: 1px solid white;
+}
+.header-top .right .cart {
+  color: white;
+}
+
+.header-bottom {
+  background-color: #334455;
+  width: 100%;
+  height: 35px;
+  padding: 0px 10px;
+}
+.header-bottom ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-bottom ul li {
+  padding: 5px 25px;
+  list-style: none;
+}
+.header-bottom ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.main {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.side-menu label {
+  font-weight: 700;
+  color: #aaa;
+}
+.side-menu input {
+  padding: 2px 4px;
+}
+.side-menu input[type=submit] {
+  font-weight: 800;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #113355;
+}
+
+.side-menu-list ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 3px 8px;
+  color: #113355;
+  border-left: 4px solid #ddd;
+}
+
+.content {
+  width: 1100px;
+  padding: 0 10px;
+}
+
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.slideshow-container .prev,
+.slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgba(0, 130, 255, 0.9019607843);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  color: #0084ff;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background: #666;
+  background: rgba(30, 60, 150, 0.6);
+  cursor: pointer;
+  text-indent: -9999px;
+  border-radius: 20px;
+  color: rgba(0, 130, 255, 0.9019607843);
+}
+
+.active,
+.dot:hover {
+  background-color: rgba(0, 130, 255, 0.9019607843);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.home-product-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding: 10px 2px;
+}
+
+.banner {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.product-series-table a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #0062a0;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0;
+}
+
+.product-card-carousel .container {
+  position: relative;
+  width: 90%;
+  margin-right: auto;
+  box-shadow: 2px 2px 5px #888;
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+}
+.product-card-carousel .container .mySlides {
+  display: none;
+  width: 100%;
+  height: 40vh;
+  padding: 0rem;
+}
+.product-card-carousel .container .mySlides img {
+  display: block;
+  width: 80%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+.product-card-carousel .container .prev,
+.product-card-carousel .container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #0062a0;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.product-card-carousel .container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.product-card-carousel .container .prev:hover,
+.product-card-carousel .container .next:hover {
+  background-color: rgba(0, 99, 160, 0.1529411765);
+}
+.product-card-carousel .container .row {
+  width: 100%;
+  /* Six columns side by side */
+}
+.product-card-carousel .container .row .column {
+  width: 100%;
+  padding: 0.5rem;
+  float: left;
+  width: 20%;
+  /* Add a transparency effect for thumnbail images */
+}
+.product-card-carousel .container .row .column img {
+  width: 100%;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-card-carousel .container .row .column .demo {
+  opacity: 0.6;
+}
+.product-card-carousel .container .row .column .active,
+.product-card-carousel .container .row .column .demo:hover {
+  background-color: white;
+  opacity: 1;
+}
+.product-card-carousel .container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.product-card-details img {
+  width: 1rem;
+}
+
+.model-list-box .model-list-title {
+  background-color: #667788;
+  padding: 4px;
+}
+.model-list-box .model-list-title button {
+  color: #667788;
+  background-color: white;
+  border: none;
+  padding: 4px 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.model-list-table td {
+  color: #667788;
+}
+.model-list-table p {
+  color: #667788;
+}
+.model-list-table .model-image {
+  width: 20%;
+}
+.model-list-table .model-details {
+  width: 50%;
+}
+.model-list-table .model-price {
+  font-size: 14px;
+}
+.model-list-table .add-to-quotation {
+  font-size: 14px;
+}
+.model-list-table .add-to-quotation label {
+  color: #667788;
+}
+.model-list-table .add-to-quotation input[type=number] {
+  width: 60px;
+  margin-top: 5px;
+}
+.model-list-table .add-to-quotation input[type=submit] {
+  font-weight: 700;
+  padding: 2px 4px;
+  margin-top: 10px;
+}
+
+.datadownloads-list-table h3 {
+  color: #113355;
+}
+.datadownloads-list-table td a {
+  font-size: 14px;
+  color: #0062A0;
+}
+.datadownloads-list-table tr {
+  border: none;
+}/*# sourceMappingURL=style.css.map */

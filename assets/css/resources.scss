@@ -1,0 +1,67 @@
+.content {
+  .floated_left {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  strong,
+  b {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    color: #444;
+  }
+
+  a {
+    color: #0062a0;
+    b {
+      color: #0062a0;
+    }
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .mt-100 {
+    margin-top: 100px;
+  }
+
+  .panel-2col-bricks .panel-col-first {
+    float: left;
+    width: 50%;
+  }
+
+  td {
+    img {
+      width: 32px;
+    }
+  }
+  // .file-type-icon {
+  //   width: 32px;
+  //   float: left;
+  // }
+
+  // table img {
+  //   width: 32px;
+  // }
+
+  // a {
+  //   color: #0062a0;
+  // }
+  // table h4 {
+  //   font-weight: 700;
+  // }
+
+  // ul {
+  //   li {
+  //     font-size: 15px;
+  //     color: #334455;
+  //   }
+  // }
+}
