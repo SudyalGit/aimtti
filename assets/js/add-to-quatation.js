@@ -1,5 +1,6 @@
 console.log("add to quotation running");
 
+
 let upadateCartCount = () => {
   let cartCount = document.querySelector(".cart p");
   // console.log(cartCount);
